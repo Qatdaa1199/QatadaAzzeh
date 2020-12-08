@@ -1,0 +1,126 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/apply.css">
+<link rel="stylesheet" href="css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+
+<div class="logo">Demon City</div>
+<img class="backguy" style="bottom: 35vw; left: 75vw; top: unset;" src="img/pic3.png">
+
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')" style="border-color: #520000">الرئيسية</li>
+    <li class="menuitem" onclick="openLink('about')" style="border-color: #520000">من نحن</li>
+    <li class="menuitem" onclick="openLink('rules')" style="border-color: #520000">القوانين</li>
+    <li class="menuitem" onclick="openLink('whitelist')" style="border-color: #520000">Whitelist</li>
+    <li class="menuitem" onclick="openLink('apply')" style="border-color: #520000">التقديم على التيم</li>
+    <li class="menuitem" onclick="openLink('contact')" style="border-color: #520000">تواصل معنا</li>
+    <li class="menuitem" onclick="openLink('partner')" style="border-color: #520000">أصحاب ومبرمجين السيرفر</li>
+    <li class="menuitem" onclick="openLink('imprint')" style="border-color: #520000">المتجر</li>
+</ul>
+
+<div class="maintext">
+
+    <form method="post" action="php/apply.php" enctype='multipart/form-data'>
+
+        <p>اسمك وايديك في اللعبة</p>
+        <p><input type="text" name="username" required></p>
+
+        <p>الرتبة المراد التقديم عليها</p>
+        <p>
+            <select name="subject" onclick="selectRang(this.value)" required>
+                <option value="Developer">ادمن داخل اللعبة</option>
+            </select>
+        </p>
+
+        <p>بريدك الالكتروني</p>
+        <p><input type="email" name="email" required></p>
+
+        <p>سبب التقديم</p>
+        <p><textarea name="body" required></textarea ></p >
+    
+        <p>Files (PDF Documents, References etc.)</p>
+        <p><input type="file" class="input-file" name="data"></p>
+
+        <p >
+        <input type="submit" name="submit" value="Submit" >
+        </p >
+
+        <div class="dev">
+                <p>عمرك</p>
+                <p><input type="text" name="dev-scriptsprache"></p >
+
+                <p>اوقات تواجدك</p>
+                <p><input type="text" name="dev-vorstellung"></p >
+
+                <p>خبراتك</p>
+                <p><input type="text" name="dev-since"></p >
+
+                <p>هل كنت ادمن سابق في سيرفر اخر</p>
+                <p><input type="text" name="dev-network"></p >
+
+                <p>اي ملاحظات اخرى</p>
+                <p><input type="text" name="dev-time"></p >
+        </div>
+
+        <div class="sup" style="display: none;">
+                <p>What tasks do you think support has?</p>
+                <p><input type="text" name="sup-aufgabe"></p >
+
+                <p>Where / when does support start and where does it end?</p>
+                <p><input type="text" name="sup-start"></p >
+
+                <p>What does the term "support" mean to me?</p>
+                <p><input type="text" name="sup-begriff"></p >
+
+                <p>How much time do I have for my support activities? (Approximately)</p>
+                <p><input type="text" name="sup-time"></p >
+
+        </div>
+
+        <div class="kon" style="display: none;">
+                <p>What tools are you familiar with for concepts?</p>
+                <p><input type="text" name="kon-tools"></p >
+
+                <p>What is a finished concept for you?</p>
+                <p><input type="text" name="kon-fertig"></p >
+
+                <p>What do you look for in a concept?</p>
+                <p><input type="text" name="kon-worauf"></p >
+
+                <p>What time limit do you set yourself when working on a concept?</p>
+                <p><input type="text" name="kon-limit"></p >
+
+                <p>What is your attitude to working in a team?</p>
+                <p><input type="text" name="kon-setting"></p >
+
+                <p>What are your online times like?</p>
+                <p><input type="text" name="kon-online"></p >
+        </div>
+
+        <div class="son" style="display: none;">
+                <p>Describe your rank?</p>
+                <p><input type="text" name="son-beschreibung"></p >
+
+                <p>What is the role of rank?</p>
+                <p><input type="text" name="son-aufgaben"></p >
+
+                <p>Do you have previous experience in this area?</p>
+                <p><input type="text" name="son-erfahrung"></p >
+
+                <p>How much time will the activities take?</p>
+                <p><input type="text" name="son-time"></p >
+
+                <p>What is your attitude to working in a team?</p>
+                <p><input type="text" name="son-setting"></p >
+
+                <p>What are your online times like?</p>
+                <p><input type="text" name="son-online"></p >
+        </div>
+    
+    </form >
+    
+</div>
+</html>
+<!--Copyright (c) 2020 TechKings.de-->

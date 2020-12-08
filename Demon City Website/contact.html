@@ -1,0 +1,47 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+
+<div class="logo">Demon City</div>
+<img class="backguy" style="bottom: 35vw; left: 75vw; top: unset;" src="img/pic3.png">
+
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')" style="border-color: #520000">الرئيسية</li>
+    <li class="menuitem" onclick="openLink('about')" style="border-color: #520000">من نحن</li>
+    <li class="menuitem" onclick="openLink('rules')" style="border-color: #520000">القوانين</li>
+    <li class="menuitem" onclick="openLink('whitelist')" style="border-color: #520000">Whitelist</li>
+    <li class="menuitem" onclick="openLink('apply')" style="border-color: #520000">التقديم على التيم</li>
+    <li class="menuitem" onclick="openLink('contact')" style="border-color: #520000">تواصل معنا</li>
+    <li class="menuitem" onclick="openLink('partner')" style="border-color: #520000">أصحاب ومبرمجين السيرفر</li>
+    <li class="menuitem" onclick="openLink('imprint')" style="border-color: #520000">المتجر</li>
+</ul>
+
+<div class="maintext">
+
+    <form method="post" action="php/contact.php">
+
+        <p>الاسم</p>
+        <p><input type="text" name="username" required></p>
+
+        <p>المشكلة</p>
+        <p><input type="text" name="subject"></p>
+
+        <p>البريد الالكتروني</p>
+        <p><input type="email" name="email" required></p>
+
+        <p>اشرح مشكلتك بشكل مفصل</p>
+        <p><textarea name="body" required></textarea ></p >
+    
+        <p >
+        <input type="submit" name="submit" value="التقديم" >
+        </p >
+    
+    </form >
+    
+</div>
+</html>
+<!--Copyright (c) 2020 TechKings.de-->
